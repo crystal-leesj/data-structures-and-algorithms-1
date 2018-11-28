@@ -1,7 +1,7 @@
 
 import java.util.Arrays;
 
-public class Main {
+public class arrayReverse {
     public static void main (String[] args){
         String[] favAnimals = new String[5];
     String[] newArray = new String[5];
