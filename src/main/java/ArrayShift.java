@@ -8,29 +8,26 @@ public class ArrayShift {
     }
     public static int[] arrayShift(int[] intitalArray,int ele) {
         int middle;
-        int counter = 0;
         int[] newArray = new int[intitalArray.length + 1];
-
         if (newArray.length % 2 == 0) {
             middle = newArray.length / 2;
         } else {
             middle = (newArray.length + 1) / 2;
         }
 
-        for(int i = 0; i<intitalArray.length; i++) {
-            newArray[counter] = intitalArray[i];
-            counter++;
-
-                if (counter == middle) {
-//                    for (int j = newArray.length - 1; j < middle - 1; j--) {
-//                        newArray[j] = newArray[j-1];
-                    newArray[middle] = ele;
-
+        for(int i = 0; i<newArray.length; i++) {
+            if (i == middle) {
+                newArray[i] = intitalArray[i];
+                newArray[i] = ele;
                     }
-                }
-//        }
-
-    return newArray;
+                    else if(i< middle){
+                        newArray[i] = intitalArray[i];
+                    }
+                    else{
+                    newArray[i] = intitalArray[i-1];
+                     }
+        }
+                return newArray;
     }
 }
 
