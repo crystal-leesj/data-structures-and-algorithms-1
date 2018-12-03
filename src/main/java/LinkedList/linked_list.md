@@ -7,7 +7,7 @@ Create a Node class that has properties for the value stored in the Node, and a 
 
 ## Challenge
 <!-- Description of the challenge -->
-The most challenging part of knowing what to add to the ListNode class and what to add to the SinglyLinkedList class.
+The most challenging part of knowing what to add to the LinkedList.ListNode class and what to add to the LinkedList.SinglyLinkedList class.
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
