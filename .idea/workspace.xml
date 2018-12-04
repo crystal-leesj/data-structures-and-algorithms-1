@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23649fc7-d89b-4306-94c8-cdd1e807677e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked_list.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinkedList/linked_list.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinkedList/ListNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinkedList/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LinkedList/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinkedList/SinglyLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LinkedList/linked_list.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LinkedList/linked_list.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LinkedList/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LinkedList/SinglyLinkedListTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -38,14 +36,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="22" />
-          <entry key="java" value="6929" />
-          <entry key="md" value="1690" />
+          <entry key="java" value="7932" />
+          <entry key="md" value="1919" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6929" />
-          <entry key="PLAIN_TEXT" value="1712" />
+          <entry key="JAVA" value="7932" />
+          <entry key="PLAIN_TEXT" value="1941" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -53,13 +51,13 @@
           <entry key="Binary_search" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="java" value="13" />
-          <entry key="md" value="6" />
+          <entry key="md" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="13" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="PLAIN_TEXT" value="10" />
         </counts>
       </usages-collector>
     </session>
@@ -69,17 +67,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/LinkedList/SinglyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="68" column="48" lean-forward="true" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="48" />
+            <state relative-caret-position="1325">
+              <caret line="134" column="35" selection-start-line="134" selection-start-column="35" selection-end-line="134" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/LinkedList/SinglyLinkedListTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="347" column="46" selection-start-line="347" selection-start-column="46" selection-end-line="347" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/LinkedList/SinglyLinkedListTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/LinkedList/linked_list.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="402">
+              <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/binary_search.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -87,20 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/LinkedList/ListNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
+            <state relative-caret-position="54">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ArrayShiftTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="18" column="75" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -430,6 +437,7 @@
         <option value="$PROJECT_DIR$/src/test/java/ArrayShiftTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/LinkedList/SinglyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/test/java/LinkedList/SinglyLinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/LinkedList/linked_list.md" />
       </list>
     </option>
   </component>
@@ -457,6 +465,17 @@
             <path>
               <item name="datastructures" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="datastructures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="datastructures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -470,27 +489,6 @@
               <item name="dataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="datastructures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="LinkedList" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="datastructures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="datastructures" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -501,7 +499,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543870067311" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543897443180" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -531,20 +529,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SinglyLinkedListTest">
-    <configuration name="SinglyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LinkedList.SinglyLinkedList" />
-      <module name="datastructures_main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LinkedList.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.appendLongTest">
     <configuration name="SinglyLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="datastructures_test" />
       <extension name="coverage">
@@ -559,7 +544,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.printLongTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.appendLongTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="datastructures_test" />
       <extension name="coverage">
         <pattern>
@@ -569,13 +554,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="LinkedList" />
       <option name="MAIN_CLASS_NAME" value="LinkedList.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="printLongTest" />
+      <option name="METHOD_NAME" value="appendLongTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.printMediumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.appendMediumTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="datastructures_test" />
       <extension name="coverage">
         <pattern>
@@ -585,13 +570,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="LinkedList" />
       <option name="MAIN_CLASS_NAME" value="LinkedList.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="printMediumTest" />
+      <option name="METHOD_NAME" value="appendMediumTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.printShortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.appendShortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="datastructures_test" />
       <extension name="coverage">
         <pattern>
@@ -601,26 +586,42 @@
       </extension>
       <option name="PACKAGE_NAME" value="LinkedList" />
       <option name="MAIN_CLASS_NAME" value="LinkedList.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="printShortTest" />
+      <option name="METHOD_NAME" value="appendShortTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SinglyLinkedListTest.insertBeforeLongTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="datastructures_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LinkedList.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LinkedList" />
+      <option name="MAIN_CLASS_NAME" value="LinkedList.SinglyLinkedListTest" />
+      <option name="METHOD_NAME" value="insertBeforeLongTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.SinglyLinkedListTest.insertBeforeLongTest" />
       <item itemvalue="JUnit.SinglyLinkedListTest" />
-      <item itemvalue="Application.SinglyLinkedList" />
-      <item itemvalue="JUnit.SinglyLinkedListTest.printShortTest" />
-      <item itemvalue="JUnit.SinglyLinkedListTest.printLongTest" />
-      <item itemvalue="JUnit.SinglyLinkedListTest.printMediumTest" />
+      <item itemvalue="JUnit.SinglyLinkedListTest.appendShortTest" />
+      <item itemvalue="JUnit.SinglyLinkedListTest.appendMediumTest" />
+      <item itemvalue="JUnit.SinglyLinkedListTest.appendLongTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SinglyLinkedListTest.appendLongTest" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.appendMediumTest" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.appendShortTest" />
         <item itemvalue="JUnit.SinglyLinkedListTest" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.printMediumTest" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.printLongTest" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.printShortTest" />
-        <item itemvalue="Application.SinglyLinkedList" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.insertBeforeLongTest" />
       </list>
     </recent_temporary>
   </component>
@@ -638,42 +639,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SinglyLinkedListTest_length - 2018.12.03 at 11h 51m 17s.xml">
-      <configuration name="SinglyLinkedListTest.length" configurationId="JUnit" />
+    <history-entry file="SinglyLinkedListTest_insertBeforeMediumTest - 2018.12.03 at 20h 01m 28s.xml">
+      <configuration name="SinglyLinkedListTest.insertBeforeMediumTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SinglyLinkedListTest - 2018.12.03 at 11h 53m 15s.xml">
+    <history-entry file="SinglyLinkedListTest_insertBeforeMediumTest - 2018.12.03 at 20h 01m 37s.xml">
+      <configuration name="SinglyLinkedListTest.insertBeforeMediumTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinglyLinkedListTest_insertBeforeMediumTest - 2018.12.03 at 20h 02m 22s.xml">
+      <configuration name="SinglyLinkedListTest.insertBeforeMediumTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinglyLinkedListTest_insertBeforeMediumTest - 2018.12.03 at 20h 02m 38s.xml">
+      <configuration name="SinglyLinkedListTest.insertBeforeMediumTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinglyLinkedListTest_insertBeforeMediumTest - 2018.12.03 at 20h 03m 33s.xml">
+      <configuration name="SinglyLinkedListTest.insertBeforeMediumTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinglyLinkedListTest_insertBeforeLongTest - 2018.12.03 at 20h 04m 21s.xml">
+      <configuration name="SinglyLinkedListTest.insertBeforeLongTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinglyLinkedListTest - 2018.12.03 at 20h 04m 37s.xml">
       <configuration name="SinglyLinkedListTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SinglyLinkedListTest_printShortTest - 2018.12.03 at 12h 27m 19s.xml">
-      <configuration name="SinglyLinkedListTest.printShortTest" configurationId="JUnit" />
+    <history-entry file="SinglyLinkedListTest_appendShortTest - 2018.12.03 at 20h 06m 47s.xml">
+      <configuration name="SinglyLinkedListTest.appendShortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SinglyLinkedListTest_printShortTest - 2018.12.03 at 12h 28m 28s.xml">
-      <configuration name="SinglyLinkedListTest.printShortTest" configurationId="JUnit" />
+    <history-entry file="SinglyLinkedListTest_appendMediumTest - 2018.12.03 at 20h 09m 34s.xml">
+      <configuration name="SinglyLinkedListTest.appendMediumTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SinglyLinkedListTest_printShortTest - 2018.12.03 at 12h 28m 47s.xml">
-      <configuration name="SinglyLinkedListTest.printShortTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SinglyLinkedListTest_printLongTest - 2018.12.03 at 12h 33m 20s.xml">
-      <configuration name="SinglyLinkedListTest.printLongTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SinglyLinkedListTest_printLongTest - 2018.12.03 at 12h 33m 36s.xml">
-      <configuration name="SinglyLinkedListTest.printLongTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SinglyLinkedListTest_printLongTest - 2018.12.03 at 12h 34m 59s.xml">
-      <configuration name="SinglyLinkedListTest.printLongTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SinglyLinkedListTest_printLongTest - 2018.12.03 at 12h 35m 23s.xml">
-      <configuration name="SinglyLinkedListTest.printLongTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SinglyLinkedListTest_printMediumTest - 2018.12.03 at 12h 36m 35s.xml">
-      <configuration name="SinglyLinkedListTest.printMediumTest" configurationId="JUnit" />
+    <history-entry file="SinglyLinkedListTest_appendLongTest - 2018.12.03 at 20h 10m 41s.xml">
+      <configuration name="SinglyLinkedListTest.appendLongTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26037195" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -682,7 +683,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15180723" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29036143" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36746988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -736,13 +737,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Binary_search" />
-    <entry file="file://$PROJECT_DIR$/binary_search.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" column="84" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/array_shift.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -754,13 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="13" selection-start-line="13" selection-end-line="13" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LinkedList/linked_list.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -789,22 +776,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/LinkedList/ListNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
+        <state relative-caret-position="54">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/LinkedList/SinglyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="68" column="48" lean-forward="true" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="48" />
+        <state relative-caret-position="1325">
+          <caret line="134" column="35" selection-start-line="134" selection-start-column="35" selection-end-line="134" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/LinkedList/SinglyLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="40">
+          <caret line="347" column="46" selection-start-line="347" selection-start-column="46" selection-end-line="347" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/binary_search.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="19" selection-start-line="19" selection-end-line="19" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LinkedList/linked_list.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
         </state>
       </provider>
     </entry>

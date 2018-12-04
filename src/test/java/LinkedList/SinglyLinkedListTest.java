@@ -21,7 +21,7 @@ public class SinglyLinkedListTest {
 
         assertArrayEquals(expected, actual.toArray());
     }
-
+    @Test
     public void insertAtBeginningMediumTest() {
 
         int[] expected = {1,2,10,8,1,11};
@@ -35,8 +35,9 @@ public class SinglyLinkedListTest {
         actual.insertAtBeginning(1);
 
         assertArrayEquals(expected, actual.toArray());
-    }
 
+    }
+    @Test
     public void insertAtBeginningLongTest() {
 
         int[] expected = {12,4,1,2,10,8,1,11};
@@ -112,7 +113,7 @@ public class SinglyLinkedListTest {
         actual.insertAtBeginning(1);
         actual.insertAtBeginning(8);
         actual.insertAtBeginning(10);
-        String expected = "10 -->8 -->1 -->11 -->";
+        String expected = "10 8 1 11 ";
         System.out.println(expected);
         actual.print();
         System.out.println();
@@ -129,7 +130,7 @@ public class SinglyLinkedListTest {
         actual.insertAtBeginning(14);
         actual.insertAtBeginning(13);
         actual.insertAtBeginning(12);
-        String expected = "12 -->13 -->14 -->10 -->8 -->1 -->11 -->";
+        String expected = "12 13 14 10 8 1 11 ";
         System.out.println(expected);
         actual.print();
         System.out.println();
@@ -144,7 +145,7 @@ public class SinglyLinkedListTest {
         actual.insertAtBeginning(10);
         actual.insertAtBeginning(14);
         actual.insertAtBeginning(13);
-        String expected = "13 -->14 -->10 -->8 -->1 -->11 -->";
+        String expected = "13 14 10 8 1 11 ";
         System.out.println(expected);
         actual.print();
         System.out.println();
@@ -205,6 +206,158 @@ public class SinglyLinkedListTest {
 
         assertEquals(expected, actual.toArray().length);
 
+    }
 
+    //Testing for insertAfter
+    @Test
+    public void insertAfterShortTest() {
+
+        int[] expected = {10,8,1,8,11};
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = actual.insertAtBeginning(11);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(8);
+        actual.insertAtBeginning(10);
+        actual.insertAfter(1,8);
+        assertArrayEquals(expected, actual.toArray());
+    }
+
+    @Test
+    public void insertAfterMediumTest() {
+
+        int[] expected = {1,2,5,10,8,1,11};
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = actual.insertAtBeginning(11);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(8);
+        actual.insertAtBeginning(10);
+        actual.insertAtBeginning(2);
+        actual.insertAtBeginning(1);
+        actual.insertAfter(2,5);
+
+        assertArrayEquals(expected, actual.toArray());
+
+    }
+
+    @Test
+    public void insertAfterLongTest() {
+
+        int[] expected = {12,4,1,2,8,10,8,1,11};
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = actual.insertAtBeginning(11);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(8);
+        actual.insertAtBeginning(10);
+        actual.insertAtBeginning(2);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(4);
+        actual.insertAtBeginning(12);
+        actual.insertAfter(2,8);
+
+        assertArrayEquals(expected, actual.toArray());
+    }
+    //Testing for insertBefore
+    @Test
+    public void insertBeforeShortTest() {
+
+        int[] expected = {10,8,8,1,11};
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = actual.insertAtBeginning(11);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(8);
+        actual.insertAtBeginning(10);
+        actual.insertBefore(1,8);
+        assertArrayEquals(expected, actual.toArray());
+    }
+
+    @Test
+    public void insertBeforeMediumTest() {
+
+        int[] expected = {1,8,2,10,8,1,11};
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = actual.insertAtBeginning(11);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(8);
+        actual.insertAtBeginning(10);
+        actual.insertAtBeginning(2);
+        actual.insertAtBeginning(1);
+        actual.insertBefore(2,8);
+
+        assertArrayEquals(expected, actual.toArray());
+    }
+
+    @Test
+    public void insertBeforeLongTest() {
+
+        int[] expected = {12,4,1,8,2,10,8,1,11};
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = actual.insertAtBeginning(11);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(8);
+        actual.insertAtBeginning(10);
+        actual.insertAtBeginning(2);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(4);
+        actual.insertAtBeginning(12);
+        actual.insertBefore(2,8);
+
+        assertArrayEquals(expected, actual.toArray());
+    }
+
+    //Testing for Append
+    @Test
+    public void appendShortTest() {
+
+        int[] expected = {10,8,1,11,5};
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = actual.insertAtBeginning(11);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(8);
+        actual.insertAtBeginning(10);
+        actual.append(5);
+        assertArrayEquals(expected, actual.toArray());
+    }
+
+    @Test
+    public void appendMediumTest() {
+
+        int[] expected = {1,8,2,10,8,1,11};
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = actual.insertAtBeginning(11);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(8);
+        actual.insertAtBeginning(10);
+        actual.insertAtBeginning(2);
+        actual.insertAtBeginning(1);
+        actual.insertBefore(2,8);
+
+        assertArrayEquals(expected, actual.toArray());
+    }
+
+    @Test
+    public void appendLongTest() {
+
+        int[] expected = {12,4,1,2,10,8,1,11,5};
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = actual.insertAtBeginning(11);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(8);
+        actual.insertAtBeginning(10);
+        actual.insertAtBeginning(2);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(4);
+        actual.insertAtBeginning(12);
+        actual.append(5);
+
+        assertArrayEquals(expected, actual.toArray());
     }
 }
