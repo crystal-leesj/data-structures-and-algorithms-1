@@ -1,38 +1,31 @@
 package LinkedList;
 
+import javax.xml.soap.Node;
 import java.util.Arrays;
 
 public class SinglyLinkedList {
     public ListNode head;
 
     public static void main (String[] args){
-//        //creating a linkList
-//        SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
-//        singlyLinkedList.head = singlyLinkedList.insertAtBeginning(1);
-//        singlyLinkedList.insertAtBeginning(2);
-//        singlyLinkedList.insertAtBeginning(3);
-//        singlyLinkedList.insertAtBeginning(5);
-//
-//
-////        ListNode head = new ListNode(10);
-////        ListNode second = new ListNode(8);
-////        ListNode third = new ListNode(1);
-////        ListNode fourth = new ListNode(11);
-//
-////        //Attach them together
-////        head.next= second; //10-->8
-////        second.next = third; //10--8--1
-////        third.next = fourth; // 10--8--1--11--null
-//
-//        //creating a instance of the class
-//
-//        //applying the insert method
-//
-//        singlyLinkedList.print();
-//        System.out.println(Arrays.toString(singlyLinkedList.toArray()));
-//        //applying includes method
-////        System.out.println(singlyLinkedList.includes(25));
-////        System.out.println(singlyLinkedList.length(this.head));
+        //creating a linkList
+        SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
+        singlyLinkedList.head = singlyLinkedList.insertAtBeginning(1);
+        singlyLinkedList.insertAtBeginning(2);
+        singlyLinkedList.insertAtBeginning(3);
+        singlyLinkedList.insertAtBeginning(5);
+        singlyLinkedList.append(5);
+//        singlyLinkedList.insertBefore(1,8);
+//        singlyLinkedList.insertAfter(3,8);
+
+
+        //applying the insert method
+
+        singlyLinkedList.print();
+        System.out.println();
+        System.out.println(Arrays.toString(singlyLinkedList.toArray()));
+        //applying includes method
+//        System.out.println(singlyLinkedList.includes(25));
+//        System.out.println(singlyLinkedList.length(this.head));
 
     }
 
@@ -47,11 +40,11 @@ public class SinglyLinkedList {
         return newNode;
     }
 
-    public boolean includes (int x){
+    public boolean includes (int value){
 
        ListNode current = this.head; //initializing current
-        while(current != null){
-            if(current.data ==  x){
+        while(current != null){//while we are not at the end
+            if(current.data == value){
                 return true;
             }
             current = current.next;
@@ -61,18 +54,16 @@ public class SinglyLinkedList {
 
     //given a list node, print all elements it holds
     public void print() {
-        if (this.head == null) {
-            return;
-        }
+//        if (this.head == null) {
+//            return;
+//        }
         ListNode current = this.head;
         while (current != null) {
-            System.out.print(current.data+ " -->");
+            System.out.print(current.data+ " ");
             current = current.next;
         }
-//        System.out.println(current); //until nothing in list
+//        System.out.println(current); //null at end of node
     }
-
-
     //given a list node fine out length, not part of lab, just something I wanted
     //to see
     public int length(ListNode head){
@@ -97,6 +88,66 @@ public class SinglyLinkedList {
             this.head = this.head.next;
         }
         return arr;
+    }
+
+    public void append (int value){
+        ListNode current = this.head;
+        ListNode newNode = new ListNode(value);
+        while(current.next != null){
+            current = current.next;
+        }
+        current.next = newNode;
+
+    }
+
+    public  void insertBefore(int value, int newVal) {
+        ListNode newNode = new ListNode(newVal);
+        ListNode current = this.head;
+        if (current.data == value) {
+            newNode.next = current;
+            this.head = newNode;
+            return;
+        }
+            while (current.next.data != value) {
+                if(current.next == null)
+                    return;
+                current = current.next;
+            }
+            ListNode temp = current.next;
+            current.next = newNode;
+            newNode.next = temp;
+
+    }
+
+    public void insertAfter(int value, int newVal){
+        ListNode newNode = new ListNode(newVal);
+        ListNode current = this.head;
+        if (current.data == value) {
+            newNode.next = current.next;
+            current.next = newNode;
+            return;
+        }
+        while (current.data != value) {
+            if(current == null)
+                return;
+            current = current.next;
+        }
+        ListNode temp = current.next;
+        current.next = newNode;
+        newNode.next = temp;
+    }
+    public ListNode kthFromEnd (int k){
+            ListNode current = this.head;
+            int length = length(head);
+            int count = 0;
+            while(current != null){
+                if(length-1-k == count){
+                    return current;
+                }
+                current = current.next;
+                count++;
+            }
+        return null;
     }
 }
 
