@@ -1,6 +1,7 @@
 package LinkedList;
 
 import org.junit.Test;
+import org.w3c.dom.NodeList;
 
 import java.util.LinkedList;
 
@@ -359,5 +360,63 @@ public class SinglyLinkedListTest {
         actual.append(5);
 
         assertArrayEquals(expected, actual.toArray());
+    }
+
+    //Testing kthFromEnd
+    @Test
+    public void kthFromEndShortTest() {
+        int[] arr = {110,8,1,11};
+
+        int expected = 11;
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = actual.insertAtBeginning(11);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(8);
+        actual.insertAtBeginning(10);
+
+        int actually = actual.kthFromEnd(0).data;
+
+        assertEquals(expected,actually);
+    }
+
+
+    @Test
+    public void kthFromEndMediumTest() {
+        int[] arr = {1,2,10,8,1,11};
+
+        int expected = 11;
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = actual.insertAtBeginning(11);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(8);
+        actual.insertAtBeginning(10);
+        actual.insertAtBeginning(2);
+        actual.insertAtBeginning(1);
+
+        int actually = actual.kthFromEnd(0).data;
+
+        assertEquals(expected,actually);
+    }
+
+    @Test
+    public void kthFromEndLongTest() {
+        int[] arr = {12,4,1,2,10,8,1,11};
+
+      int expected = 11;
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = actual.insertAtBeginning(11);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(8);
+        actual.insertAtBeginning(10);
+        actual.insertAtBeginning(2);
+        actual.insertAtBeginning(1);
+        actual.insertAtBeginning(4);
+        actual.insertAtBeginning(12);
+        int actually = actual.kthFromEnd(0).data;
+
+        assertEquals(expected,actually);
     }
 }

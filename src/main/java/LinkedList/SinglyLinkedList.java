@@ -13,9 +13,9 @@ public class SinglyLinkedList {
         singlyLinkedList.insertAtBeginning(2);
         singlyLinkedList.insertAtBeginning(3);
         singlyLinkedList.insertAtBeginning(5);
-//        singlyLinkedList.append(5);
+        singlyLinkedList.append(5);
 //        singlyLinkedList.insertBefore(1,8);
-        singlyLinkedList.insertAfter(3,8);
+//        singlyLinkedList.insertAfter(3,8);
 
 
         //applying the insert method
@@ -64,8 +64,6 @@ public class SinglyLinkedList {
         }
 //        System.out.println(current); //null at end of node
     }
-
-
     //given a list node fine out length, not part of lab, just something I wanted
     //to see
     public int length(ListNode head){
@@ -138,8 +136,19 @@ public class SinglyLinkedList {
         current.next = newNode;
         newNode.next = temp;
     }
-
-
+    public ListNode kthFromEnd (int k){
+            ListNode current = this.head;
+            int length = length(head);
+            int count = 0;
+            while(current != null){
+                if(length-1-k == count){
+                    return current;
+                }
+                current = current.next;
+                count++;
+            }
+        return null;
+    }
 }
 
 
