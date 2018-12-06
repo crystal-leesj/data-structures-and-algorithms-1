@@ -2,6 +2,7 @@ package LinkedList;
 
 import javax.xml.soap.Node;
 import java.util.Arrays;
+import java.util.LinkedList;
 
 public class SinglyLinkedList {
     public ListNode head;
@@ -148,6 +149,37 @@ public class SinglyLinkedList {
                 count++;
             }
         return null;
+    }
+
+    public static ListNode mergeList (ListNode head1,ListNode head2){
+        ListNode current1 = head1 , current2 = head2;
+        ListNode temp1 = current1.next, temp2 = current2.next;
+
+        if(head1 == null){
+            return head2;
+        } if(head2 == null){
+            return  head1;
+        }
+        while(temp1!= null && temp2 != null){
+
+           current1.next = current2;
+           current2.next = temp1;
+
+           current1= temp1;
+           temp1 = temp1.next;
+           current2 = temp2;
+           temp2 = temp2.next;
+        }
+        if(current1.next != current2){
+            current1.next = current2;
+        }
+//        if(temp1 == null){
+//            current2.next = temp2;
+//        }
+        if(current2.next == null){
+            current2.next = temp1;
+        }
+        return head1;
     }
 }
 
