@@ -453,4 +453,83 @@ public class SinglyLinkedListTest extends SinglyLinkedList {
 
         assertArrayEquals(expected,act);
     }
+
+    @Test
+    public void mergedListMediumTest() {
+
+        ListNode n1 = new ListNode(1);
+        ListNode n2 = new ListNode(2);
+        ListNode n3 = new ListNode(3);
+        ListNode n4 = new ListNode(4);
+        ListNode n5 = new ListNode(5);
+        ListNode n66 = new ListNode(66);
+
+        n1.next=n2;
+        n2.next = n3;
+        n3.next = n4;
+        n4.next = n5;
+        n5.next= n66;
+
+        ListNode n6 = new ListNode(6);
+        ListNode n7 = new ListNode(7);
+        ListNode n8 = new ListNode(8);
+        ListNode n9 = new ListNode(9);
+        ListNode n10 = new ListNode(10);
+        n6.next = n7;
+        n7.next = n8;
+        n8.next = n9;
+        n9.next = n10;
+
+        ListNode testing = mergeList(n1,n6);
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = testing;
+
+        int[] expected = {1,6,2,7,3,8,4,9,5,10,66};
+        int[] act = actual.toArray();
+
+        assertArrayEquals(expected,act);
+    }
+
+
+    @Test
+    public void mergedListLongTest() {
+
+        ListNode n1 = new ListNode(1);
+        ListNode n2 = new ListNode(2);
+        ListNode n3 = new ListNode(3);
+        ListNode n4 = new ListNode(4);
+        ListNode n5 = new ListNode(5);
+        ListNode n66 = new ListNode(66);
+        ListNode n77 = new ListNode(77);
+
+        n1.next=n2;
+        n2.next = n3;
+        n3.next = n4;
+        n4.next = n5;
+        n5.next= n66;
+        n66.next = n77;
+
+        ListNode n6 = new ListNode(6);
+        ListNode n7 = new ListNode(7);
+        ListNode n8 = new ListNode(8);
+        ListNode n9 = new ListNode(9);
+        ListNode n10 = new ListNode(10);
+        ListNode n11 = new ListNode(11);
+        n6.next = n7;
+        n7.next = n8;
+        n8.next = n9;
+        n9.next = n10;
+        n10.next = n11;
+
+        ListNode testing = mergeList(n1,n6);
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = testing;
+
+        int[] expected = {1,6,2,7,3,8,4,9,5,10,66,11,77};
+        int[] act = actual.toArray();
+
+        assertArrayEquals(expected,act);
+    }
 }
