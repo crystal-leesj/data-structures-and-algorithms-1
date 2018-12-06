@@ -161,7 +161,6 @@ public class SinglyLinkedList {
             return  head1;
         }
         while(temp1!= null && temp2 != null){
-
            current1.next = current2;
            current2.next = temp1;
 
