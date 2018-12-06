@@ -3,11 +3,12 @@ package LinkedList;
 import org.junit.Test;
 import org.w3c.dom.NodeList;
 
+import javax.xml.soap.Node;
 import java.util.LinkedList;
 
 import static org.junit.Assert.*;
 
-public class SinglyLinkedListTest {
+public class SinglyLinkedListTest extends SinglyLinkedList {
 //Start of Insert Test
     @Test
     public void insertAtBeginningShortTest() {
@@ -418,5 +419,38 @@ public class SinglyLinkedListTest {
         int actually = actual.kthFromEnd(0).data;
 
         assertEquals(expected,actually);
+    }
+
+    //Testing for merged List
+    @Test
+    public void mergedListShortTest() {
+
+        ListNode n1 = new ListNode(1);
+        ListNode n2 = new ListNode(2);
+        ListNode n3 = new ListNode(3);
+        ListNode n4 = new ListNode(4);
+        ListNode n5 = new ListNode(5);
+        n1.next=n2;
+        n2.next = n3;
+        n3.next = n4;
+        n4.next = n5;
+
+        ListNode n6 = new ListNode(6);
+        ListNode n7 = new ListNode(7);
+        ListNode n8 = new ListNode(8);
+        ListNode n9 = new ListNode(9);
+        n6.next = n7;
+        n7.next = n8;
+        n8.next = n9;
+
+        ListNode testing = mergeList(n1,n6);
+
+        SinglyLinkedList actual = new SinglyLinkedList();
+        actual.head = testing;
+
+        int[] expected = {1,6,2,7,3,8,4,9,5};
+        int[] act = actual.toArray();
+
+        assertArrayEquals(expected,act);
     }
 }
