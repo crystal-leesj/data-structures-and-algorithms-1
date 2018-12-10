@@ -14,4 +14,4 @@ in linkedlists.
 drawing a picture was really helpful
 ## Solution
 <!-- Embedded whiteboard image -->
-![merged_lists] (../assets/img/merged_list.jpg)
+![merged_lists](../assets/img/merged_list.jpg)

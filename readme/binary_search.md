@@ -17,5 +17,5 @@ was O(log sub n). The code was effiect in the sense that it readjusted for the a
 depending on what the mid point was compared to the key.
 ## Solution
 <!-- Embedded whiteboard image -->
-![binary_search] (../assets/img/binarySearch.jpg)
+![binary_search](../assets/img/binarySearch.jpg)
 ////////////////////////////////////////////////////////////////////////////////////
