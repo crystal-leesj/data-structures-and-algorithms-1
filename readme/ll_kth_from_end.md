@@ -15,5 +15,5 @@ as well as the methods created in previous challenges.
 Drawing a picture is the best approach I found to solve this problem.
 ## Solution
 <!-- Embedded whiteboard image -->
-![ll_kth_from_end-part1] (../assets/img/ll_kth_from_end-part1.jpg)
-![ll_kth_from_end-part2] (../assets/img/ll_kth_from_end-part2.jpg)
+![ll_kth_from_end-part1](../assets/img/ll_kth_from_end-part1.jpg)
+![ll_kth_from_end-part2](../assets/img/ll_kth_from_end-part2.jpg)

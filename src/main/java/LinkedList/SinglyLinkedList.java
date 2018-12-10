@@ -1,8 +1,7 @@
 package LinkedList;
 
-import javax.xml.soap.Node;
 import java.util.Arrays;
-import java.util.LinkedList;
+
 
 public class SinglyLinkedList {
     public ListNode head;

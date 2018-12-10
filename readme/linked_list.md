@@ -21,4 +21,4 @@ Drawing a picture of what i wanted to happen was the best approach for this. The
 
 
 ///////////////////////////////////////////////////////////////////////////////////
-
+![linked_list](../assets/img/linked_list_insertAfter.jpg)

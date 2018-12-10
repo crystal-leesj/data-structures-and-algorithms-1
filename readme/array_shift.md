@@ -13,4 +13,4 @@ I ended up drawing a picture for to then to create a new array with a length of 
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![array_shift] (../assets/img/array_shift.jpg)
+![array_shift](../assets/img/array_shift.jpg)

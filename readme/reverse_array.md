@@ -11,7 +11,7 @@ Drew a picture to realize what the final answer for any given array should look 
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![reverse_array] (../assets/img/reverse_array.jpg)
+![reverse_array](../assets/img/reverse_array.jpg)
 
 
 

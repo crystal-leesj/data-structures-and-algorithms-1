@@ -13,5 +13,5 @@ Making sure not to lose the node when adding a new one
 Drawing a picture and seudo code
 ## Solution
 <!-- Embedded whiteboard image -->
-![insert_after] (../assets/img/linked_list_insertAfter.jpg)
-![insert_before] (../assets/img/linked_list_insertBefore.jpg)
+![insert_after](../assets/img/linked_list_insertAfter.jpg)
+![insert_before](../assets/img/linked_list_insertBefore.jpg)
