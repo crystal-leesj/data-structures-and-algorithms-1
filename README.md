@@ -17,3 +17,4 @@
 
 ## Week 3
 * [Challenge 10: Stacks and Queues](./readme/stacks_and_queues.md)
+* [Challenge 11: PseudoQueue](./readme/pseudo_queue.md)
