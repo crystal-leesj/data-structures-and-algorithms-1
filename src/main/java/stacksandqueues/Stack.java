@@ -38,13 +38,13 @@ public class Stack {
         return this.top;
 }
 
-    public int length(Node head){
-        if(head == null){
+    public int length(){
+        if(this.top == null){
             return 0;
         }
         //create count variable to hold head
         int count = 0;
-        Node current = head;
+        Node current = this.top;
         while(current!=null){
             count++;
             current= current.next;
@@ -53,7 +53,7 @@ public class Stack {
     }
 
     public int[] toArray(){
-        int[] arr = new int[length(this.top)];
+        int[] arr = new int[this.length()];
         int i = 0;
         while(this.top != null){
             arr[i++] = this.top.data;

@@ -6,7 +6,7 @@ public class Queue {
      //testing purposes to keep track of the whole list while populating using the toArray Method
     public Queue (){
         this.front = null; //assignment called this top
-        this.rear= null; //aka rear
+        this.rear  = null; //aka rear
     }
 
     public void enqueue(int data){
@@ -14,12 +14,12 @@ public class Queue {
         Node node = new Node (data);
         if(this.rear == null){
             //re-assign rear
-            rear = node;
+            this.rear = node;
             this.front = node;
         } else {
             //First, we should change the Next property of Node5 to point to the node we are adding.
-            rear.next = node;
-            rear = node;
+            this.rear.next = node;
+            this.rear = node;
         }
     }
 
@@ -33,6 +33,9 @@ public class Queue {
         }
         Node temp = front;
         front = front.next;
+        if(this.front == null){
+            this.rear = null;
+        }
         temp.next = null;
         return temp;
     }
@@ -41,13 +44,13 @@ public class Queue {
         return this.front;
     }
 
-    public int length(Node head){
-        if(head == null){
+    public int length(){
+        if(this.front == null){
             return 0;
         }
         //create count variable to hold head
         int count = 0;
-        Node current = head;
+        Node current = this.front;
         while(current!=null){
             count++;
             current= current.next;
@@ -57,7 +60,7 @@ public class Queue {
 
     public int[] toArray(){
         Node current = this.front;
-        int[] arr = new int[length(this.front)];
+        int[] arr = new int[this.length()];
         int i = 0;
         while(current != null){
             arr[i++] = current.data;

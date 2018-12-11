@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="23649fc7-d89b-4306-94c8-cdd1e807677e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme/stacks_and_queues.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme/stacks_and_queues.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stacksandqueues/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stacksandqueues/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stacksandqueues/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stacksandqueues/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stacksandqueues/QueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stacksandqueues/QueueTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -38,27 +42,27 @@
         <counts>
           <entry key="dummy" value="22" />
           <entry key="gitignore" value="3" />
-          <entry key="java" value="12697" />
-          <entry key="md" value="2943" />
+          <entry key="java" value="13126" />
+          <entry key="md" value="3006" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12697" />
-          <entry key="PLAIN_TEXT" value="2968" />
+          <entry key="JAVA" value="13126" />
+          <entry key="PLAIN_TEXT" value="3031" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Binary_search" value="1" />
           <entry key="gitignore" value="3" />
-          <entry key="java" value="32" />
+          <entry key="java" value="35" />
           <entry key="md" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="32" />
+          <entry key="JAVA" value="35" />
           <entry key="PLAIN_TEXT" value="26" />
         </counts>
       </usages-collector>
@@ -67,28 +71,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/Node.java">
+        <entry file="file://$PROJECT_DIR$/readme/stacks_and_queues.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="-136">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/stacksandqueues/QueueTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="148" column="23" selection-start-line="148" selection-start-column="23" selection-end-line="148" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/Stack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/stacksandqueues/StackTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3132">
-              <caret line="118" column="36" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
+            <state relative-caret-position="1298">
+              <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -96,29 +100,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/Queue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1053">
-              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+            <state relative-caret-position="661">
+              <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
               <folding>
-                <element signature="e#1088#1089#0" expanded="true" />
+                <element signature="e#1106#1107#0" expanded="true" />
+                <element signature="e#1139#1140#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readme/stacks_and_queues.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="47" column="91" selection-start-line="47" selection-start-column="91" selection-end-line="47" selection-end-column="91" />
             </state>
           </provider>
         </entry>
@@ -464,12 +451,14 @@
         <option value="$PROJECT_DIR$/src/test/java/StacksAndQueues/QueueTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/stacksandqueues/StackTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/stacksandqueues/Stack.java" />
         <option value="$PROJECT_DIR$/readme/stacks_and_queues.md" />
+        <option value="$PROJECT_DIR$/src/test/java/stacksandqueues/QueueTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stacksandqueues/Queue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stacksandqueues/Stack.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="800" />
@@ -482,14 +471,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="datastructures" type="b2602c69:ProjectViewProjectNode" />
               <item name="dataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="datastructures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="readme" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="datastructures" type="b2602c69:ProjectViewProjectNode" />
@@ -509,14 +501,45 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="datastructures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stacksandqueues" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="datastructures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="datastructures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="datastructures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dataStructure" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="stacksandqueues" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544467519933" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544493717999" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -548,7 +571,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StackTest.peekTestLarge">
+  <component name="RunManager" selected="JUnit.QueueTest.peekTestLarge">
+    <configuration name="QueueTest.dequeueTestLarge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="datastructures_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stacksandqueues.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="stacksandqueues" />
+      <option name="MAIN_CLASS_NAME" value="stacksandqueues.QueueTest" />
+      <option name="METHOD_NAME" value="dequeueTestLarge" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueueTest.dequeueTestShort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="datastructures_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stacksandqueues.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="stacksandqueues" />
+      <option name="MAIN_CLASS_NAME" value="stacksandqueues.QueueTest" />
+      <option name="METHOD_NAME" value="dequeueTestShort" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="QueueTest.peekTestLarge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="datastructures_test" />
       <extension name="coverage">
@@ -597,52 +652,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StackTest.peekTestLarge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="datastructures_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stacksandqueues.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="stacksandqueues" />
-      <option name="MAIN_CLASS_NAME" value="stacksandqueues.StackTest" />
-      <option name="METHOD_NAME" value="peekTestLarge" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StackTest.peekTestMedium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="datastructures_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="stacksandqueues.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="stacksandqueues" />
-      <option name="MAIN_CLASS_NAME" value="stacksandqueues.StackTest" />
-      <option name="METHOD_NAME" value="peekTestMedium" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
+      <item itemvalue="JUnit.QueueTest.dequeueTestShort" />
+      <item itemvalue="JUnit.QueueTest.dequeueTestLarge" />
       <item itemvalue="JUnit.QueueTest.peekTestShort" />
       <item itemvalue="JUnit.QueueTest.peekTestMedium" />
       <item itemvalue="JUnit.QueueTest.peekTestLarge" />
-      <item itemvalue="JUnit.StackTest.peekTestLarge" />
-      <item itemvalue="JUnit.StackTest.peekTestMedium" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StackTest.peekTestLarge" />
-        <item itemvalue="JUnit.StackTest.peekTestMedium" />
         <item itemvalue="JUnit.QueueTest.peekTestLarge" />
         <item itemvalue="JUnit.QueueTest.peekTestMedium" />
         <item itemvalue="JUnit.QueueTest.peekTestShort" />
+        <item itemvalue="JUnit.QueueTest.dequeueTestLarge" />
+        <item itemvalue="JUnit.QueueTest.dequeueTestShort" />
       </list>
     </recent_temporary>
   </component>
@@ -660,41 +683,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="QueueTest_peekTestShort - 2018.12.09 at 17h 58m 27s.xml">
+    <history-entry file="QueueTest_dequeueTestShort - 2018.12.10 at 17h 36m 00s.xml">
+      <configuration name="QueueTest.dequeueTestShort" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest_dequeueTestShort - 2018.12.10 at 17h 36m 12s.xml">
+      <configuration name="QueueTest.dequeueTestShort" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest_dequeueTestShort - 2018.12.10 at 17h 36m 44s.xml">
+      <configuration name="QueueTest.dequeueTestShort" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest_dequeueTestShort - 2018.12.10 at 17h 38m 27s.xml">
+      <configuration name="QueueTest.dequeueTestShort" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest_dequeueTestLarge - 2018.12.10 at 17h 39m 12s.xml">
+      <configuration name="QueueTest.dequeueTestLarge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest_dequeueTestLarge - 2018.12.10 at 17h 40m 07s.xml">
+      <configuration name="QueueTest.dequeueTestLarge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest_dequeueTestLarge - 2018.12.10 at 17h 40m 25s.xml">
+      <configuration name="QueueTest.dequeueTestLarge" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest_peekTestShort - 2018.12.10 at 17h 42m 58s.xml">
       <configuration name="QueueTest.peekTestShort" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QueueTest_peekTestShort - 2018.12.09 at 17h 59m 06s.xml">
-      <configuration name="QueueTest.peekTestShort" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QueueTest_peekTestMedium - 2018.12.09 at 18h 00m 08s.xml">
+    <history-entry file="QueueTest_peekTestMedium - 2018.12.10 at 17h 43m 12s.xml">
       <configuration name="QueueTest.peekTestMedium" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="QueueTest_peekTestLarge - 2018.12.09 at 18h 00m 36s.xml">
+    <history-entry file="QueueTest_peekTestLarge - 2018.12.10 at 17h 43m 53s.xml">
       <configuration name="QueueTest.peekTestLarge" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StackTest_peekTestLarge - 2018.12.10 at 10h 03m 01s.xml">
-      <configuration name="StackTest.peekTestLarge" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StackTest_peekTestLarge - 2018.12.10 at 10h 03m 18s.xml">
-      <configuration name="StackTest.peekTestLarge" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StackTest_peekTestMedium - 2018.12.10 at 10h 03m 48s.xml">
-      <configuration name="StackTest.peekTestMedium" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StackTest_peekTestMedium - 2018.12.10 at 10h 05m 51s.xml">
-      <configuration name="StackTest.peekTestMedium" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StackTest_peekTestLarge - 2018.12.10 at 10h 11m 19s.xml">
-      <configuration name="StackTest.peekTestLarge" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StackTest_peekTestLarge - 2018.12.10 at 10h 11m 30s.xml">
-      <configuration name="StackTest.peekTestLarge" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16881259" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16237482" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -703,7 +727,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32909605" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.26129943" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -876,13 +900,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/StacksAndQueues.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/stacksandqueues/QueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="122" column="33" selection-start-line="122" selection-start-column="33" selection-end-line="122" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/LinkedList/ListNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -897,27 +914,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/Stack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/stacksandqueues/StackTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3132">
           <caret line="118" column="36" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
-          <folding>
-            <element signature="e#1088#1089#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -930,8 +930,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme/stacks_and_queues.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="47" column="91" selection-start-line="47" selection-start-column="91" selection-end-line="47" selection-end-column="91" />
+        <state relative-caret-position="-136">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/stacksandqueues/QueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="148" column="23" selection-start-line="148" selection-start-column="23" selection-end-line="148" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+          <folding>
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#1139#1140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/stacksandqueues/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1298">
+          <caret line="55" column="40" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
         </state>
       </provider>
     </entry>

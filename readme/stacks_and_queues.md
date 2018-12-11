@@ -1,15 +1,20 @@
 # Stacks and Queues
 <!-- Short summary or background information -->
+[code](../src/main/java/stacksandqueues)
 
-What is a Stack:
+###What is a Stack:
+
 A stack is a data structure that consists of Nodes.
+
 Each Node references the next node in the stack, but does not reference it’s previous
 
-Stacks follow these concepts:
+###Stacks follow these concepts:
+
 FILO concept: First In Last Out. This means that the first item in the stack, will be the last item out.
 LIFO concept: Last In First Out This means that the last item in the stack, will be the first item out.
 
-What is a Queue
+###What is a Queue
+
 Common terminology for a queue is:
 
 Enqueue - Nodes or items that are added to the queue.
@@ -19,13 +24,15 @@ Rear - This is the rear/last node of the queue.
 Peek - When you Peek you will view the Top node in the stack. If the stack is empty,
 and you don’t Peek, you will receive a NullReferenceException
 
-Queues follow these concepts:
+###Queues follow these concepts:
+
 FIFO - First In First Out - This means that the first item in the queue will be the first item out of the queue.
 LILO - Last In Last Out - This means that the last item in the queue will be the last item out of the queue.
 
 ## Challenge
 <!-- Description of the challenge -->
 The challenge given was to create:
+
  1.A node class that has properties for the value stored in the Node, and a pointer to the next node
  2.A stack class that has a top property. It creates an empty Stack when instantiated. It contains method that can push,
  pop and peek at a given stack.
