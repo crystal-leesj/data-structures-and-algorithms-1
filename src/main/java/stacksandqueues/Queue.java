@@ -1,17 +1,17 @@
 package stacksandqueues;
 
-public class Queue {
-    Node front;
-    Node rear;
+public class Queue <T> {
+    Node<T> front;
+    Node<T> rear;
      //testing purposes to keep track of the whole list while populating using the toArray Method
     public Queue (){
         this.front = null; //assignment called this top
         this.rear= null; //aka rear
     }
 
-    public void enqueue(int data){
+    public void enqueue(T data){
         //create new node
-        Node node = new Node (data);
+        Node<T> node = new Node<T>(data);
         if(this.rear == null){
             //re-assign rear
             rear = node;
@@ -55,9 +55,9 @@ public class Queue {
         return count;
     }
 
-    public int[] toArray(){
-        Node current = this.front;
-        int[] arr = new int[length(this.front)];
+    public T[] toArray(){
+        Node<T> current = this.front;
+        T[] arr = (T[])new Object[length(this.front)];
         int i = 0;
         while(current != null){
             arr[i++] = current.data;
