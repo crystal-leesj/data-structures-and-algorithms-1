@@ -17,3 +17,4 @@ Drew a picture to realize what the final answer for any given array should look 
 
 
 
+
