@@ -1,9 +1,8 @@
 package stacksandqueues;
 
-public class AnimalShelter<T> {
-    //create an animal node and pass the value or data as  as a string?
+import java.util.Arrays;
 
-    private Node node;
+public class AnimalShelter<T> {
 
     private Stack stack1;
     private Stack stack2;
@@ -19,7 +18,7 @@ public class AnimalShelter<T> {
         Object[] guess =  as.toArray();
 
 
-        System.out.println(guess);
+        System.out.println(Arrays.toString(guess));
     }
 
 
@@ -30,16 +29,16 @@ public class AnimalShelter<T> {
     }
 
     public void enqueue(T animal){
-        this.node = new Node(animal);
-        stack1.push(node.data);
+        stack1.push(animal);
+
     }
 
     public T dequeue(T pref){
 
        if (this.stack1.peek() != null){
-           Object[] animals =stack1.toArray();
+           Object[] animals = stack1.toArray();
            for(int i = 0; i<animals.length; i++){
-               if(animals[i] == pref){
+               if(animals[i].equals(pref)){
                    return pref;
                }else{
                    return null;
