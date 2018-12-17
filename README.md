@@ -20,3 +20,7 @@
 * [Challenge 11: PseudoQueue](./readme/pseudo_queue.md)
 * [Challenge 12: AnimalShelter ](./readme/animal_shelter.md)
 * [Challenge 13: AnimalShelter ](./readme/multi_bracket.md)
+* Challenge 14: Peer Interview Whiteboard (Return highest value in a stack)
+
+## Week 4
+* [Challenge 15: Tree](./readme/tree.md)

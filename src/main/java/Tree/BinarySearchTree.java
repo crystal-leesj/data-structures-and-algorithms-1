@@ -22,11 +22,11 @@ public class BinarySearchTree {
 
         Node node = new Node (1);
         add(n1,node);
+BinaryTree test = new BinaryTree();
+//        search(n1,10);
+//        System.out.println(add(n1,node));
 
-        search(n1,10);
-        System.out.println(search(n1,10).data);
-
-//        System.out.println(print(preOrder(n1)));
+        System.out.println(test.print(test.preOrder(n1)));
     }
 
 
@@ -36,11 +36,9 @@ public class BinarySearchTree {
 
         if(root.left == null && (int) root.data >= (int) node.data){
             root.left = node;
-
         }
         else if(root.right == null && (int) root.data < (int) node.data){
             root.right = node;
-
         }
         else if((int) root.data >= (int) node.data) {
             add(root.left, node);
