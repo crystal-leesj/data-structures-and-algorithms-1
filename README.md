@@ -24,3 +24,4 @@
 
 ## Week 4
 * [Challenge 15: Tree](./readme/tree.md)
+* [Challenge 16: FizzBuzz](./readme/fizzbuzz.md)
