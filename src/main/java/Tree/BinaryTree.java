@@ -1,5 +1,7 @@
 package Tree;
 
+import stacksandqueues.Queue;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +27,8 @@ public class BinaryTree {
         n3.right = n7;
 //        System.out.println(n1.left.data);
 //        System.out.println(n1.right.data);
-        System.out.println(sum(n1));
+//        System.out.println(sum(n1));
+        breadthFirstTraversal(n1);
 
     }
 
@@ -74,6 +77,26 @@ public class BinaryTree {
         }
     }
 
+    public static void breadthFirstTraversal(Node root){
+        Queue<Node> breadth = new Queue();
+
+        breadth.enqueue(root);
+        while (!breadth.isEmpty()){
+            //save by deq
+            Node save =  breadth.dequeue();
+            //print
+            System.out.println(save.data);
+            //if statements
+            if(save.left != null){
+                breadth.enqueue(save.left);
+            }
+            if (save.right != null){
+                breadth.enqueue(save.right);
+            }
+        }
+    }
+
+    //HELPER METHODS
     public static int sum(Node node){
         if(node == null){
             return 0;

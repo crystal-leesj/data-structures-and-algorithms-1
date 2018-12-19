@@ -12,7 +12,7 @@ public class Queue <T> {
     public void enqueue(T data){
         //create new node
         Node<T> node = new Node<T>(data);
-        if(this.rear == null){
+        if(this.front == null){ // had this. rear as null
             //re-assign rear
             rear = node;
             this.front = node;
@@ -23,7 +23,7 @@ public class Queue <T> {
         }
     }
 
-    public Node dequeue(){
+    public T dequeue(){
 
         //create a temporary reference type named
         //Temp and have it point to the same node that Front is pointing too
@@ -31,10 +31,11 @@ public class Queue <T> {
         if(this.front == null){
             return null;
         }
-        Node temp = front;
+        //more conditional
+        Node<T> temp = front;
         front = front.next;
         temp.next = null;
-        return temp;
+        return temp.data;
     }
 
     public Node peek (){
@@ -55,6 +56,9 @@ public class Queue <T> {
         return count;
     }
 
+    public boolean isEmpty(){
+        return this.front == null;
+    }
     public T[] toArray(){
         Node<T> current = this.front;
         T[] arr = (T[])new Object[length(this.front)];
