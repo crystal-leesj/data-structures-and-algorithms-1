@@ -26,3 +26,4 @@
 * [Challenge 15: Tree](./readme/tree.md)
 * [Challenge 16: FizzBuzz](./readme/fizzbuzz.md)
 * [Challenge 17: Breath-First](./readme/breath.md)
+* [Challenge 18: Max-Value](./readme/max_tree_value.md)

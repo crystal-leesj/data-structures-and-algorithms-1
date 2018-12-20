@@ -333,4 +333,68 @@ public class BinaryTreeTest {
         String expected = "1"+"\n"+"2"+"\n"+"3"+"\n"+"4"+"\n"+"5"+"\n"+"6"+"\n"+"7"+"\n";
         assertEquals(expected, outContent.toString());
     }
+
+    //STARTING TEST FOR maxValue Method
+    @Test
+    public void maxValueShort() {
+        BinaryTree classToTest = new BinaryTree();
+        Node n1 = new Node(1);
+        Node n2 = new Node(2);
+        Node n3 = new Node(3);
+
+        n1.left = n2;
+        n1.right = n3;
+        int expected = 3;
+        int actual = classToTest.maxValue(n1);
+
+       assertEquals(expected,actual);
+    }
+
+    @Test
+    public void maxValueMedium() {
+        BinaryTree classToTest = new BinaryTree();
+        Node n1 = new Node(1);
+        Node n2 = new Node(2);
+        Node n3 = new Node(3);
+        Node n4 = new Node(4);
+        Node n5 = new Node(5);
+
+        n1.left = n2;
+        n1.right = n3;
+
+        n2.left = n4;
+        n2.right = n5;
+
+        int expected = 5;
+        int actual = classToTest.maxValue(n1);
+
+        assertEquals(expected,actual);
+    }
+
+    @Test
+    public void maxValueLarge() {
+        BinaryTree classToTest = new BinaryTree();
+        Node n1 = new Node(1);
+        Node n2 = new Node(2);
+        Node n3 = new Node(3);
+        Node n4 = new Node(4);
+        Node n5 = new Node(5);
+        Node n6 = new Node(6);
+        Node n7 = new Node(7);
+
+        n1.left = n2;
+        n1.right = n3;
+
+        n2.left = n4;
+        n2.right = n5;
+
+        n3.left = n6;
+        n3.right = n7;
+
+        int expected = 7;
+        int actual = classToTest.maxValue(n1);
+
+        assertEquals(expected,actual);
+    }
+
 }
