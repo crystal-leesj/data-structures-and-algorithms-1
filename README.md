@@ -27,3 +27,4 @@
 * [Challenge 16: FizzBuzz](./readme/fizzbuzz.md)
 * [Challenge 17: Breath-First](./readme/breath.md)
 * [Challenge 18: Max-Value](./readme/max_tree_value.md)
+* Challenge 19: Peer Interview Whiteboard (Return the sum of all odd values in a Binary Search Tree)
