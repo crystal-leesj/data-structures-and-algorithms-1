@@ -1,7 +1,5 @@
 package graph;
 
-import javafx.beans.binding.SetExpression;
-
 import java.util.*;
 
 public class AdjacencyListGraph<T> {
@@ -19,17 +17,14 @@ public class AdjacencyListGraph<T> {
         GraphNode node = new GraphNode(data);
         //returning node without neighbors
 
-        //add node to the node list
+        //add node to the node set
         adjacencyList.add(node);
 
         return node;
     }
 
     //Adds a new edge between two nodes in the AdjacencyListGraph - Include the ability to have a “weight” - Takes in the two nodes to be connected by the edge - Both nodes should already be in the graph
-
-
     public void AddEdge(T weight, GraphNode start, GraphNode end) {
-
         //instantiate edge
         Edge edge = new Edge(weight, start, end);
         //add to edge set
@@ -59,7 +54,6 @@ public class AdjacencyListGraph<T> {
         }
         //return that set
         return newSet;
-
     }
 
     //Returns the total number of nodes in the graph
