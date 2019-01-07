@@ -10,15 +10,74 @@ import java.util.Set;
 import static org.junit.Assert.*;
 
 public class AdjacencyListGraphTest {
-    AdjacencyListGraph classToTest = new AdjacencyListGraph();
-
+//STARTING ADDNODE TEST
     @Test
-    public void addNode() {
-        GraphNode actual = new GraphNode(2);
+    public void addNodeSmallNumber() {
+        AdjacencyListGraph classToTest = new AdjacencyListGraph();
 
-        int expected = (int) classToTest.addNode(2).data;
+        GraphNode n1 = classToTest.addNode(2);
+        GraphNode n2 = classToTest.addNode(4);
+        GraphNode n3 = classToTest.addNode(9);
 
-        assertEquals(expected, actual.data);
+        Set<Integer> expected = new HashSet<>();
+        Set<GraphNode> n = classToTest.adjacencyList;
+        //retrieve all the data in the adjacencylist
+        Iterator<GraphNode> it = n.iterator();
+        while (it.hasNext()){
+            expected.add((int) it.next().data);
+        }
+
+        Set<Integer> actual = new HashSet<>(Arrays.asList(2, 4, 9));
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void addNodeMediumNumber() {
+        AdjacencyListGraph classToTest = new AdjacencyListGraph();
+
+        GraphNode n1 = classToTest.addNode(2);
+        GraphNode n2 = classToTest.addNode(4);
+        GraphNode n3 = classToTest.addNode(9);
+        GraphNode n4 = classToTest.addNode(11);
+        GraphNode n5 = classToTest.addNode(5);
+        GraphNode n6 = classToTest.addNode(19);
+
+        Set<Integer> expected = new HashSet<>();
+        Set<GraphNode> n = classToTest.adjacencyList;
+        //retrieve all the data in the adjacencylist
+        Iterator<GraphNode> it = n.iterator();
+        while (it.hasNext()){
+            expected.add((int) it.next().data);
+        }
+
+        Set<Integer> actual = new HashSet<>(Arrays.asList(2, 4, 9,11,5,19));
+
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void addNodeLargeNumber() {
+        AdjacencyListGraph classToTest = new AdjacencyListGraph();
+
+        GraphNode n1 = classToTest.addNode(2);
+        GraphNode n2 = classToTest.addNode(4);
+        GraphNode n3 = classToTest.addNode(9);
+        GraphNode n4 = classToTest.addNode(11);
+        GraphNode n5 = classToTest.addNode(5);
+        GraphNode n6 = classToTest.addNode(19);
+        GraphNode n7 = classToTest.addNode(55);
+        GraphNode n8 = classToTest.addNode(199);
+
+        Set<Integer> expected = new HashSet<>();
+        Set<GraphNode> n = classToTest.adjacencyList;
+        //retrieve all the data in the adjacencylist
+        Iterator<GraphNode> it = n.iterator();
+        while (it.hasNext()){
+            expected.add((int) it.next().data);
+        }
+
+        Set<Integer> actual = new HashSet<>(Arrays.asList(2, 4, 9,11,5,19,55,199));
+
+        assertEquals(expected, actual);
     }
 
     //STARTING addEdgesTest
@@ -149,10 +208,7 @@ public class AdjacencyListGraphTest {
         classToTest.addNode(n3);
 
         int actual = classToTest.size();
-
         int expected = 3;
-
         assertEquals(expected,actual);
-
     }
 }
