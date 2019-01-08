@@ -331,7 +331,15 @@ public class AdjacencyListGraphTest {
     }
 
 
-    //STARTING TEST FOR SIZE
+    //STARTING TEST FOR SIZE METHOD
+
+    @Test
+    public void getSizeGraphIsEmpty(){
+        AdjacencyListGraph graph = new AdjacencyListGraph();
+        int expected =0;
+        int actual = graph.size();
+        assertEquals(expected,actual);
+    }
 
     @Test
     public void sizeSmall(){
@@ -419,4 +427,5 @@ public class AdjacencyListGraphTest {
         int expected = 5;
         assertEquals(expected,actual);
     }
+
 }

@@ -4,7 +4,7 @@ import java.util.*;
 
 public class GraphNode<T> {
     public T data;
-    public Set<GraphNode> neighbors;
+    public Set<Edge> neighbors;
 
     //constructor
     public GraphNode (T data){
