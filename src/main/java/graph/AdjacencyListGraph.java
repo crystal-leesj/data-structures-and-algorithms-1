@@ -66,25 +66,25 @@ public class AdjacencyListGraph<T> {
     //breadth-first traversal method that accepts a starting node, return a collection of nodes in the order they were visited. Display the collection.
 
     public static List<GraphNode> breadthFirstTraversal(GraphNode start){
-        List<GraphNode> collection = new ArrayList<>();
+        List<GraphNode> visited = new ArrayList<>();
         Queue<GraphNode> breadth = new Queue();
 
         //add to the queue
         breadth.enqueue(start);
 
         //add to the collection
-        collection.add(start);
+        visited.add(start);
 
         while(!breadth.isEmpty()){
             GraphNode save = breadth.dequeue();
                 for(Object n: save.neighbors) {
-                    if (!collection.contains(n)) {
+                    if (!visited.contains(n)) {
                         breadth.enqueue((GraphNode) n);
-                        collection.add((GraphNode) n);
+                        visited.add((GraphNode) n);
                     }
                 }
         }
-         return collection;
+         return visited;
     }
 
 }

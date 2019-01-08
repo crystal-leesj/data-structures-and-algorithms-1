@@ -443,7 +443,7 @@ public class AdjacencyListGraphTest {
 
 
         List<GraphNode> expected = new ArrayList<>(Arrays.asList(start,ne2,ne3));
-        List<GraphNode> actual = classToTest.breadth2(start);
+        List<GraphNode> actual = classToTest.breadthFirstTraversal(start);
 
         assertEquals(expected,actual);
 
