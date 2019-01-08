@@ -2,10 +2,7 @@ package graph;
 
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
@@ -428,4 +425,86 @@ public class AdjacencyListGraphTest {
         assertEquals(expected,actual);
     }
 
+    @Test
+    public void breadthFirstTraversalTestSmall(){
+        AdjacencyListGraph classToTest = new AdjacencyListGraph();
+
+        GraphNode start = new GraphNode(1);
+        GraphNode ne2 = new GraphNode(2);
+        GraphNode ne3 = new GraphNode(3);
+
+        classToTest.addNode(start);
+        classToTest.addNode(ne2);
+        classToTest.addNode(ne3);
+
+
+        classToTest.AddEdge(2,start,ne2);
+        classToTest.AddEdge(4,ne2,ne3);
+
+
+        List<GraphNode> expected = new ArrayList<>(Arrays.asList(start,ne2,ne3));
+        List<GraphNode> actual = classToTest.breadth2(start);
+
+        assertEquals(expected,actual);
+
+    }
+
+    @Test
+    public void breadthFirstTraversalTestMedium(){
+        AdjacencyListGraph classToTest = new AdjacencyListGraph();
+
+        GraphNode start = new GraphNode(1);
+        GraphNode ne2 = new GraphNode(2);
+        GraphNode ne3 = new GraphNode(3);
+        GraphNode ne4 = new GraphNode(4);
+
+
+
+        classToTest.addNode(start);
+        classToTest.addNode(ne2);
+        classToTest.addNode(ne3);
+        classToTest.addNode(ne4);
+
+
+        classToTest.AddEdge(2,start,ne2);
+        classToTest.AddEdge(4,ne2,ne3);
+        classToTest.AddEdge(10,ne3,ne4);
+
+
+        List<GraphNode> expected = new ArrayList<>(Arrays.asList(start,ne2,ne3,ne4));
+        List<GraphNode> actual = classToTest.breadthFirstTraversal(start);
+
+        assertEquals(expected,actual);
+
+    }
+
+    @Test
+    public void breadthFirstTraversalTestLarge(){
+        AdjacencyListGraph classToTest = new AdjacencyListGraph();
+
+        GraphNode start = new GraphNode(1);
+        GraphNode ne2 = new GraphNode(2);
+        GraphNode ne3 = new GraphNode(3);
+        GraphNode ne4 = new GraphNode(4);
+        GraphNode ne5 = new GraphNode(5);
+
+
+        classToTest.addNode(start);
+        classToTest.addNode(ne2);
+        classToTest.addNode(ne3);
+        classToTest.addNode(ne4);
+        classToTest.addNode(ne5);
+
+        classToTest.AddEdge(2,start,ne2);
+        classToTest.AddEdge(4,ne2,ne3);
+        classToTest.AddEdge(10,ne3,ne4);
+        classToTest.AddEdge(6,ne3,ne5);
+        classToTest.AddEdge(8,ne4,ne5);
+
+        List<GraphNode> expected = new ArrayList<>(Arrays.asList(start,ne2,ne3,ne5,ne4));
+        List<GraphNode> actual = classToTest.breadthFirstTraversal(start);
+
+        assertEquals(expected,actual);
+
+    }
 }

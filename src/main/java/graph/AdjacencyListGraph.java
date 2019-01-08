@@ -1,5 +1,7 @@
 package graph;
 
+import stacksandqueues.Queue;
+
 import java.util.*;
 
 public class AdjacencyListGraph<T> {
@@ -59,6 +61,30 @@ public class AdjacencyListGraph<T> {
     //Returns the total number of nodes in the graph
     public int size() {
         return adjacencyList.size();
+    }
+
+    //breadth-first traversal method that accepts a starting node, return a collection of nodes in the order they were visited. Display the collection.
+
+    public static List<GraphNode> breadthFirstTraversal(GraphNode start){
+        List<GraphNode> collection = new ArrayList<>();
+        Queue<GraphNode> breadth = new Queue();
+
+        //add to the queue
+        breadth.enqueue(start);
+
+        //add to the collection
+        collection.add(start);
+
+        while(!breadth.isEmpty()){
+            GraphNode save = breadth.dequeue();
+                for(Object n: save.neighbors) {
+                    if (!collection.contains(n)) {
+                        breadth.enqueue((GraphNode) n);
+                        collection.add((GraphNode) n);
+                    }
+                }
+        }
+         return collection;
     }
 
 }
