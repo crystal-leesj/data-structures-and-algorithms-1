@@ -12,4 +12,9 @@ public class GraphNode<T> {
         this.neighbors= new HashSet<>();
     }
 
+    @Override
+    public String toString(){
+        return (String)this.data;
+    }
+
 }

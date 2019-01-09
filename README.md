@@ -32,3 +32,4 @@
 ##Week 6
 * [Challenge 20: Adjacency-list](./readme/adjacencyListGraph.md)
 * [Challenge 21: BreadthFirstSearch-Graph](./readme/breadthFirstGraph.md)
+* [Challenge 22: Adjacency-list-Search](./readme/adjacencyListGraphSearch.md)

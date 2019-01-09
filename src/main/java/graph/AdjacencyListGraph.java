@@ -1,10 +1,11 @@
 package graph;
 
 import stacksandqueues.Queue;
+import stacksandqueues.Stack;
 
 import java.util.*;
 
-public class AdjacencyListGraph<T> {
+public class AdjacencyListGraph <T> {
     public Set<GraphNode> adjacencyList;
     public Set<Edge> edges;
 
@@ -87,4 +88,47 @@ public class AdjacencyListGraph<T> {
          return visited;
     }
 
+        public static int search (AdjacencyListGraph graph, List<String> cities){
+            Set<GraphNode> visited = new HashSet();
+            Stack<GraphNode> dfs;
+            int result = 0;
+            //List<Boolan>
+
+            for (GraphNode node : (Set<GraphNode>) graph.adjacencyList) {
+                if (isEqual( node, cities)) {
+                    dfs = new Stack();
+                    visited.clear();
+
+                    dfs.push(node);
+                    visited.add(node);
+
+                    while (dfs.peek() != null) {
+                        GraphNode save = dfs.pop();
+
+                        for (Edge n : (Set<Edge>) save.neighbors) {
+                            if (!visited.contains(n.getEnd()) && isEqual(n.getEnd(), cities)) {
+                                dfs.push(n.getEnd());
+                                visited.add(n.getEnd());
+                                result += (int) n.getWeight();
+                            }
+                            if (visited.size() == cities.size()) {
+                                return result;
+                            }
+                        }
+                    }
+                }
+                result = 0;
+            }
+            return result;
+        }
+
+        public static boolean isEqual(GraphNode s, List<String> ss){
+
+            for(String str: ss){
+                if(ss.equals(s.data)){
+                    return true;
+                }
+            }
+        return  false;
+        }
 }
