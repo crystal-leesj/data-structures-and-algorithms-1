@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.*;
 
+import static java.util.Arrays.*;
 import static org.junit.Assert.*;
 
 public class AdjacencyListGraphTest {
@@ -24,7 +25,7 @@ public class AdjacencyListGraphTest {
             expected.add((int) it.next().data);
         }
 
-        Set<Integer> actual = new HashSet<>(Arrays.asList(2, 4, 9));
+        Set<Integer> actual = new HashSet<>(asList(2, 4, 9));
         assertEquals(expected, actual);
     }
     @Test
@@ -46,7 +47,7 @@ public class AdjacencyListGraphTest {
             expected.add((int) it.next().data);
         }
 
-        Set<Integer> actual = new HashSet<>(Arrays.asList(2, 4, 9,11,5,19));
+        Set<Integer> actual = new HashSet<>(asList(2, 4, 9,11,5,19));
 
         assertEquals(expected, actual);
     }
@@ -71,7 +72,7 @@ public class AdjacencyListGraphTest {
             expected.add((int) it.next().data);
         }
 
-        Set<Integer> actual = new HashSet<>(Arrays.asList(2, 4, 9,11,5,19,55,199));
+        Set<Integer> actual = new HashSet<>(asList(2, 4, 9,11,5,19,55,199));
         assertEquals(expected, actual);
     }
 
@@ -155,9 +156,9 @@ public class AdjacencyListGraphTest {
         while (it.hasNext()) {
             nodeValues.add((int) it.next().data);
         }
-        assertTrue(nodeValues.containsAll(new HashSet<>(Arrays.asList(1, 2, 3))));
+        assertTrue(nodeValues.containsAll(new HashSet<>(asList(1, 2, 3))));
 
-        Set<Integer> actual = new HashSet<>(Arrays.asList(1, 2, 3));
+        Set<Integer> actual = new HashSet<>(asList(1, 2, 3));
     }
 
     @Test
@@ -182,7 +183,7 @@ public class AdjacencyListGraphTest {
             nodeValues.add((int) it.next().data);
         }
 
-        Set<Integer> actual = new HashSet<>(Arrays.asList(1, 2, 3));
+        Set<Integer> actual = new HashSet<>(asList(1, 2, 3));
 
         assertEquals(nodeValues, actual);
     }
@@ -209,7 +210,7 @@ public class AdjacencyListGraphTest {
             nodeValues.add((int) it.next().data);
         }
 
-        Set<Integer> actual = new HashSet<>(Arrays.asList(1, 2, 3,23));
+        Set<Integer> actual = new HashSet<>(asList(1, 2, 3,23));
         assertEquals(nodeValues, actual);
     }
 
@@ -442,7 +443,7 @@ public class AdjacencyListGraphTest {
         classToTest.AddEdge(4,ne2,ne3);
 
 
-        List<GraphNode> expected = new ArrayList<>(Arrays.asList(start,ne2,ne3));
+        List<GraphNode> expected = new ArrayList<>(asList(start,ne2,ne3));
         List<GraphNode> actual = classToTest.breadthFirstTraversal(start);
 
         assertEquals(expected,actual);
@@ -471,7 +472,7 @@ public class AdjacencyListGraphTest {
         classToTest.AddEdge(10,ne3,ne4);
 
 
-        List<GraphNode> expected = new ArrayList<>(Arrays.asList(start,ne2,ne3,ne4));
+        List<GraphNode> expected = new ArrayList<>(asList(start,ne2,ne3,ne4));
         List<GraphNode> actual = classToTest.breadthFirstTraversal(start);
 
         assertEquals(expected,actual);
@@ -501,8 +502,106 @@ public class AdjacencyListGraphTest {
         classToTest.AddEdge(6,ne3,ne5);
         classToTest.AddEdge(8,ne4,ne5);
 
-        List<GraphNode> expected = new ArrayList<>(Arrays.asList(start,ne2,ne3,ne5,ne4));
+        List<GraphNode> expected = new ArrayList<>(asList(start,ne2,ne3,ne5,ne4));
         List<GraphNode> actual = classToTest.breadthFirstTraversal(start);
+
+        assertEquals(expected,actual);
+
+    }
+
+//STARTING TEST FOR SEARCH METHOD
+
+    @Test
+    public void searchSmall(){
+        AdjacencyListGraph classToTest = new AdjacencyListGraph();
+
+        //input is what to test for in thegraph
+        List<String> cities = new ArrayList<>();
+        cities.add("s");
+        cities.add("w");
+
+        GraphNode start = new GraphNode("s");
+        GraphNode n1 = new GraphNode("w");
+        GraphNode n2 = new GraphNode("x");
+
+        //add them all in graoh
+        classToTest.addNode(start);
+        classToTest.addNode(n1);
+        classToTest.addNode(n2);
+
+        //connect them to make gra
+
+        classToTest.AddEdge(1,start,n1);
+        classToTest.AddEdge(1,n1,n2);
+
+        int expected = 0;
+
+        int actual = classToTest.search(classToTest, cities);
+
+        assertEquals(expected,actual);
+
+    }
+
+
+
+    @Test
+    public void searchMedium(){
+        AdjacencyListGraph classToTest = new AdjacencyListGraph();
+
+        //input is what to test for in thegraph
+        List<String> cities = new ArrayList<>();
+        cities.add("s");
+        cities.add("w");
+
+        GraphNode start = new GraphNode("s");
+        GraphNode n1 = new GraphNode("w");
+        GraphNode n2 = new GraphNode("x");
+
+        //add them all in graoh
+        classToTest.addNode(start);
+        classToTest.addNode(n1);
+        classToTest.addNode(n2);
+
+        //connect them to make gra
+
+        classToTest.AddEdge(1,start,n1);
+        classToTest.AddEdge(1,n1,n2);
+
+       int expected = 0;
+
+       int actual = classToTest.search(classToTest, cities);
+
+       assertEquals(expected,actual);
+
+    }
+
+    @Test
+    public void searchLarge(){
+        AdjacencyListGraph classToTest = new AdjacencyListGraph();
+
+        //input is what to test for in thegraph
+        List<String> cities = new ArrayList<>();
+        cities.add("s");
+        cities.add("w");
+        cities.add("x");
+
+        GraphNode start = new GraphNode("s");
+        GraphNode n1 = new GraphNode("w");
+        GraphNode n2 = new GraphNode("x");
+
+        //add them all in graoh
+        classToTest.addNode(start);
+        classToTest.addNode(n1);
+        classToTest.addNode(n2);
+
+        //connect them to make gra
+
+        classToTest.AddEdge(1,start,n1);
+        classToTest.AddEdge(1,n1,n2);
+
+        int expected = 0;
+
+        int actual = classToTest.search(classToTest, cities);
 
         assertEquals(expected,actual);
 
