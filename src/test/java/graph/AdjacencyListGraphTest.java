@@ -4,11 +4,12 @@ import org.junit.Test;
 
 import java.util.*;
 
-import static java.util.Arrays.*;
+import static java.util.Arrays.asList;
 import static org.junit.Assert.*;
 
 public class AdjacencyListGraphTest {
-//STARTING ADD NODE TEST
+
+    //STARTING ADD NODE TEST
     @Test
     public void addNodeSmall() {
         AdjacencyListGraph classToTest = new AdjacencyListGraph();
@@ -215,7 +216,7 @@ public class AdjacencyListGraphTest {
     }
 
 
-//STARTING GET NEIGHBORS TEST
+    //STARTING GET NEIGHBORS TEST
     @Test
     public void GetNeighborsSmallNumber() {
         //this method returns a set of neighboring edges of the node that is passed in
@@ -243,7 +244,7 @@ public class AdjacencyListGraphTest {
                 actual = false;
             }
         }
-    assertTrue(actual);
+        assertTrue(actual);
     }
     @Test
     public void GetNeighborsMediumNumber() {
@@ -567,11 +568,11 @@ public class AdjacencyListGraphTest {
         classToTest.AddEdge(1,start,n1);
         classToTest.AddEdge(1,n1,n2);
 
-       int expected = 0;
+        int expected = 0;
 
-       int actual = classToTest.search(classToTest, cities);
+        int actual = classToTest.search(classToTest, cities);
 
-       assertEquals(expected,actual);
+        assertEquals(expected,actual);
 
     }
 
@@ -605,5 +606,37 @@ public class AdjacencyListGraphTest {
 
         assertEquals(expected,actual);
 
+    }
+
+    @Test
+    public void dfs(){
+        AdjacencyListGraph classToTest = new AdjacencyListGraph();
+
+        GraphNode start = new GraphNode(1);
+        GraphNode n1 = new GraphNode(2);
+        GraphNode n2 = new GraphNode(3);
+
+        //add them all in graoh
+        classToTest.addNode(start);
+        classToTest.addNode(n1);
+        classToTest.addNode(n2);
+
+        //connect them to make graph
+
+        classToTest.AddEdge(1,start,n1);
+        classToTest.AddEdge(1,n1,n2);
+
+
+        List<GraphNode> expected = new ArrayList<>(Arrays.asList(start,n1,n2));
+
+        List<GraphNode> actual = AdjacencyListGraph.depthFirstGraph(classToTest);
+        Boolean isEqual = true;
+        for(int i = 0; i<expected.size(); i++){
+
+            if(expected.get(i).data != actual.get(i).data){
+                isEqual= false;
+            }
+        }
+        assertTrue(isEqual);
     }
 }
