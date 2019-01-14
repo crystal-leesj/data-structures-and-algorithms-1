@@ -1,9 +1,5 @@
-package hastable;
+package hashtable;
 
-import LinkedList.ListNode;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Hashtable {
     public  int size;

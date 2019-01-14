@@ -1,4 +1,4 @@
-package hastable;
+package hashtable;
 
 import org.junit.Test;
 

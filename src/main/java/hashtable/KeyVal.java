@@ -1,4 +1,4 @@
-package hastable;
+package hashtable;
 
 public class KeyVal {
     Object key;
