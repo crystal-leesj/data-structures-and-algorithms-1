@@ -29,9 +29,13 @@
 * [Challenge 18: Max-Value](./readme/max_tree_value.md)
 * Challenge 19: Peer Interview Whiteboard (Return the sum of all odd values in a Binary Search Tree)
 
-##Week 6
+## Week 6
 * [Challenge 20: Adjacency-list](./readme/adjacencyListGraph.md)
 * [Challenge 21: BreadthFirstSearch-Graph](./readme/breadthFirstGraph.md)
 * [Challenge 22: Adjacency-list-Search](./readme/adjacencyListGraphSearch.md)
 * [Challenge 22: Adjacency-list-DepthFirst](./readme/adjacencyListDepthFirst.md)
+* Challenge 23: Peer Interview Whiteboard (Return if two nodes have an edge given a start and end node)
+
+## Week 7
+* [Challenge 24: Hashtable](./readme/adjacencyListDepthFirst.md)
 
