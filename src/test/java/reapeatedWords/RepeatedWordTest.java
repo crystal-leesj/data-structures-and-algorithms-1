@@ -31,9 +31,19 @@ public class RepeatedWordTest {
     }
 
     @Test
+    public void repeatedWordsCaps() {
+        RepeatedWord classToTest = new RepeatedWord();
+        String string = "I am String String String string ";
+        String actual = "string";
+        String expected = classToTest.repeatedWords(string);
+        assertEquals(expected,actual);
+        System.out.println(expected);
+    }
+
+    @Test
     public void repeatedWordsNoRepeatsManyRepeats() {
         RepeatedWord classToTest = new RepeatedWord();
-        String string = "I am string string String string ";
+        String string = "I am String String String string ";
         String actual = "string";
         String expected = classToTest.repeatedWords(string);
         assertEquals(expected,actual);
