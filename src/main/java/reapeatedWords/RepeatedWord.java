@@ -8,11 +8,13 @@ public class RepeatedWord {
 
     public String repeatedWords(String string){
         Set<String> set = new HashSet<>();
-        String[] splited = string.split(" ");
+        String[] splited = string.toLowerCase()
+//                .replaceAll("[^a-z]", "")
+                .split(" ");
 
         for(int i = 0; i<splited.length; i++){
             if(set.contains(splited[i])){
-                return splited[i].toLowerCase();
+                return splited[i];
 
             }
             set.add(splited[i]);
