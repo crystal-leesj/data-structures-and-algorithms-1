@@ -38,4 +38,6 @@
 
 ## Week 7
 * [Challenge 24: Hashtable](./readme/adjacencyListDepthFirst.md)
+* [Challenge 25: repeated_words](./readme/repeated_words.md)
+* [Challenge 26: tree_intersection](./readme/tree_intersection.md)
 
