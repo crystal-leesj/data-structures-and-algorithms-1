@@ -15,7 +15,7 @@ public class TreeIntersection {
                     set.add(root1.data);
                     treeIntersectionPopulate(set, root1.left, root2.left);
                     treeIntersectionPopulate(set, root1.right,root2.right);
-                }else {set.add("No similar points");}
+                }else {set.add("No shared values");}
         }
     }
     public  Set<Object> treeIntersection(Node root1, Node root2){
