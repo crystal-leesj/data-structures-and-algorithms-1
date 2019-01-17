@@ -35,7 +35,7 @@ Implement a Hashtable with the following capabilities:
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-The following have Big O of O(1):
+The following have Big O of O(1) for both space and time:
 Find
 Contains
 add
