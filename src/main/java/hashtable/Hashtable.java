@@ -26,7 +26,7 @@ public class Hashtable {
     }
 
     //A method/function named contains that takes in the key and returns if the key exists in the table already.
-    public Boolean contains (Object key){
+    public boolean contains (Object key){
         //null check
         if(bucket[getHashIndex(key)] == null){
             return false;
