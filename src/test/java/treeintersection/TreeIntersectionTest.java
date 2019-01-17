@@ -71,7 +71,7 @@ public class TreeIntersectionTest {
         n6.left = n8;
 
         Set<Object> expected = new HashSet<>();
-        expected.add("No similar points");
+        expected.add("No shared values");
 
         Set<Object> actual = classToTest.treeIntersection(tree1,tree2);
         System.out.println(actual);
