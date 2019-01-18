@@ -3,7 +3,7 @@ package Tree;
 public class BinarySearchTree {
     public static void main(String[] args) {
         Node n1 = new Node(1);
-        Node n2 = new Node(2);
+        Node n2 = new Node(4);
         Node n3 = new Node(3);
         Node n4 = new Node(4);
         Node n5 = new Node(5);
@@ -26,7 +26,7 @@ BinaryTree test = new BinaryTree();
 //        search(n1,10);
 //        System.out.println(add(n1,node));
 
-        System.out.println(test.print(test.preOrder(n1)));
+        System.out.println(isBinarySearch(n1));
     }
 
 
@@ -60,5 +60,22 @@ BinaryTree test = new BinaryTree();
            result = search(root.right, value);
        }
         return result;
+    }
+
+    public static boolean isBinarySearch(Node root){
+        if(root == null){
+            return false;
+        }
+        while(root != null){
+            if((int) root.right.data > (int)root.left.data && (int) root.left.data< (int) root.right.data ){
+                return true;
+            }else if( (int) root.left.data> (int) root.right.data && (int) root.right.data< (int) root.left.data){
+                return false;
+            }
+            isBinarySearch(root.left);
+            isBinarySearch(root.right);
+
+        }
+        return false;
     }
 }

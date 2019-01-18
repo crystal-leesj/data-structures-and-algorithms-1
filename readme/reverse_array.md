@@ -9,6 +9,9 @@ Creating a new array
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 Drew a picture to realize what the final answer for any given array should look like
 
+Space O()
+Time O()
+
 ## Solution
 <!-- Embedded whiteboard image -->
 ![reverse_array](../assets/img/reverse_array.jpg)
