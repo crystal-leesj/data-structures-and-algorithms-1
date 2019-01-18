@@ -41,4 +41,5 @@
 * [Challenge 25: repeated_words](./readme/repeated_words.md)
 * [Challenge 26: tree_intersection](./readme/tree_intersection.md)
 * [Challenge 27: left_join](./readme/left_join.md)
+* Challenge 28: Peer Interview Whiteboard (Return if string input had repeated word)
 

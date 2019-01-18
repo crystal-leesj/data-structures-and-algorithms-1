@@ -17,7 +17,7 @@ source: https://www.geeksforgeeks.org/set-in-java/
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-I created a visual what an an expected output is given an input. The big O is O(n)
+I created a visual what an an expected output is given an input. Time and Space: The big O is O(n)
 
 ## Solution
 <!-- Embedded whiteboard image -->
