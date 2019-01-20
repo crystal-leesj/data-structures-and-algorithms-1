@@ -42,4 +42,7 @@
 * [Challenge 26: tree_intersection](./readme/tree_intersection.md)
 * [Challenge 27: left_join](./readme/left_join.md)
 * Challenge 28: Peer Interview Whiteboard (Return if string input had repeated word)
+## Week 8
+* [Challenge 29: InsertionSort](./readme/inserton_sort.md)
+
 
