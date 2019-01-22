@@ -4,13 +4,15 @@ public class MergeSort {
 
     //Write a function that accepts an array of unsorted integers, and returns a sorted array by a recursive mergesort algorithm.
 
+    //source: https://www.geeksforgeeks.org/merge-sort/
+
     public int[] mergeSort(int[] arr){
         //is array length <1
         if(arr.length<2){
             return arr;
         }
 
-        //pass right/left method?
+        //pass right/left method
         int [] right = splitRight(arr);
         int[] left = splitLeft(arr);
 
