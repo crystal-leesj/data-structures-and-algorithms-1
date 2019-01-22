@@ -9,6 +9,8 @@ Merging of two lists done as follows:
 The first element of both lists is compared. If sorting in ascending order, the smaller element among two becomes a new element of the sorted list. This procedure is repeated until both the smaller sublists are empty and the newly combined sublist covers all the elements of both the sublists.
 source: https://www.interviewbit.com/tutorial/merge-sort-algorithm/
 
+source: https://www.geeksforgeeks.org/merge-sort/
+
 ## Challenge
 <!-- Description of the challenge -->
 Write a function that accepts an array of unsorted integers, and returns a sorted array by a recursive mergesort algorithm.
