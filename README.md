@@ -44,5 +44,8 @@
 * Challenge 28: Peer Interview Whiteboard (Return if string input had repeated word)
 ## Week 8
 * [Challenge 29: InsertionSort](./readme/insertion_sort.md)
+* [Challenge 30: mergeSort](./readme/merge_sort.md)
+* [Challenge 31: quickSort](./readme/quick_sort.md)
+* [Challenge 32: RadixSort](./readme/radix_sort.md)
 
 
